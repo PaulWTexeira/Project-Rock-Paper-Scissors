@@ -4,8 +4,20 @@ function getComputerChoice() {
     console.log("rock");
     } else if (choice === 1) {
         console.log("paper")
-     } else if (choice === 2) {
+    } else if (choice === 2) {
         console.log("scissors")
-        }
-    return choice
     }
+    return choice
+}
+
+function getHumanChoice() {
+   choice = prompt("Rock, paper, scissors?").toLowerCase()
+   if (choice === "rock") {
+      console.log("rock")
+   } else if (choice === "scissors") {
+      console.log("scissors")
+   } else if (choice === "paper") {
+      console.log("paper")
+   }
+   return choice
+}
